@@ -1,43 +1,4 @@
-/* --- A) Wrap input code lines to avoid horizontal scroll --- */
-.bd-article .cell .highlight pre {
-  white-space: pre-wrap;     /* allow wrapping in <pre> */
-  overflow-x: visible;       /* remove the horizontal scrollbar */
-  overflow-wrap: anywhere;   /* break long identifiers/URLs if needed */
-}
-
-/* Optional: also wrap text in outputs
-.bd-article .cell_output pre {
-  white-space: pre-wrap;
-  overflow-wrap: anywhere;
-}
-*/
-
-/* --- B) Reclaim width / tweak layout (CSS variables supported by the theme) --- */
-:root{
-  --pst-sidebar-secondary-width: 0;  
-}
-.bd-sidebar-secondary { display: none !important; }
-:root{
-  --pst-page-width: 150rem;
-  --pst-page-max-width: 150rem;       
-}
-.bd-container { max-width: var(--pst-page-width, 150rem) !important; }
-:root{
-  --pst-content-width: 80rem; 
-}
-.bd-main .bd-content .bd-article {
-  max-width: var(--pst-content-width) !important;
-}
-
-
-/* --- C) Slightly smaller, airier code for readability --- */
-.bd-article .cell .highlight pre,
-.bd-article .cell_output pre {
-  font-size: 0.875rem;  /* ~14px */
-  line-height: 1.45;
-}
-
-/* --- D) Per-cell utility classes you can use from MyST --- */
+/* --- Per-cell utility classes from MyST --- */
 .code-small pre { font-size: 0.875rem; line-height: 1.45; }
 .code-wrap  pre { white-space: pre-wrap; overflow-wrap: anywhere; }
 
@@ -47,15 +8,33 @@
   max-width: none;
 }
 
-
 /*On this page content spacer*/
 
 /* spacing/divider above the page ToC */
 .page-toc { margin-top: .75rem; padding-top: .75rem; border-top: 1px solid var(--pst-color-border); padding-bottom: .75rem; border-bottom: 1px solid var(--pst-color-border);}
 
-/* defensive: bulletless lists & tidy links even if classes change */
+/* bulletless lists & tidy links */
 .page-toc ul { list-style: none; margin: 0; padding-left: 0; }
 .page-toc ul ul { padding-left: .75rem; }
 .page-toc a { text-decoration: none;}
-.page-toc a font { color: black;}
+/*.page-toc a font { color: black;}*/
 .page-toc a:hover { text-decoration: underline; }
+
+/* ==== Use full width; remove right sidebar (sphinx_book_theme) ==== */
+@media (min-width: 992px) {
+
+  /* Collapse the grid to two columns and drop the third area */
+  .bd-main {
+    grid-template-columns: var(--pst-sidebar-primary-width, 18rem) minmax(0, 1fr) !important;
+    grid-template-areas: "sidebar-primary content" !important;
+  }
+
+  /* Widen the page container so code blocks have room */
+  .bd-page-width { max-width: 100rem !important; } /* tweak to taste */
+}
+
+:root{
+  --pst-page-width: 150rem;
+  --pst-page-max-width: 150rem;
+  --pst-sidebar-secondary: 0rem;
+}
