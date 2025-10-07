@@ -38,7 +38,7 @@ Here is a list of topics that are currently looking for contributors
 | Topic | Contributor |
 | :----- | :----- |
 | Long-range interactions and qLDPC codes | TBD |
-| Transversal logic | TBD |
+| Transversal logic (Logical cliffords, lattice surgery, magic state distillation) | [Srushti Patil](https://github.com/Next-di-mension/deltakit-textbook/) |
 | Specialized decoders | TBD |
 | Color codes | TBD |
 | Bicycle Bivariate (BB) codes | TBD |
