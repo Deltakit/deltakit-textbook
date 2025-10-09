@@ -47,7 +47,7 @@ Here is a list of topics that are currently looking for contributors
 | ZX Calculus and error propagation | [Lia Yeh](https://github.com/lia-approves/deltakit-textbook/) |
 | Considerations of QEC experiments on real systems | TBD |
 | Hook errors in practice | TBD |
-| Real-time QEC | TBD |
+| Real-time QEC | [Namitha Liyanage](https://github.com/NamiLiyR/deltakit-textbook/) |
 | Noise models 101 (eg coherent errors, readout errors) | TBD |
 | Threshold theorems | TBD |
 | Decoder library additions | TBD |
