@@ -38,7 +38,7 @@ Here is a list of topics that are currently looking for contributors
 | Topic | Contributor |
 | :----- | :----- |
 | Long-range interactions and qLDPC codes | TBD |
-| Transversal logic (Logical cliffords, lattice surgery, magic state distillation) | [Srushti Patil](https://github.com/Next-di-mension/deltakit-textbook/) |
+| Transversal logic (Logical Cliffords, lattice surgery, magic state distillation) | [Srushti Patil](https://github.com/Next-di-mension/deltakit-textbook/) |
 | Specialized decoders | TBD |
 | Color codes | TBD |
 | Bicycle Bivariate (BB) codes | TBD |
@@ -48,7 +48,7 @@ Here is a list of topics that are currently looking for contributors
 | Considerations of QEC experiments on real systems | TBD |
 | Hook errors in practice | TBD |
 | Real-time QEC | [Namitha Liyanage](https://github.com/NamiLiyR/deltakit-textbook/) |
-| Noise models 101 (eg coherent errors, readout errors) | TBD |
+| Noise models 101 (e.g. coherent errors, readout errors) | TBD |
 | Threshold theorems | TBD |
 | Decoder library additions | TBD |
 
